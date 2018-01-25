@@ -15,7 +15,7 @@ class IdeasContainer extends Component {
   }
 
   componentDidMount() {
-   axios.get('http://localhost:3001/api/v1/ideas.json')
+   axios.get('https://lit-castle-79659.herokuapp.com/api/v1/ideas.json')
     .then(response => {
         console.log(response)
         this.setState({ideas: response.data})
@@ -24,7 +24,7 @@ class IdeasContainer extends Component {
   }
 
   addNewIdea = () => {
-    axios.post('http://localhost:3001/api/v1/ideas', {idea : {title:'', body:''}})
+    axios.post('https://lit-castle-79659.herokuapp.com/api/v1/ideas', {idea : {title:'', body:''}})
     .then(response => {
         console.log(response)
         const ideas = update(this.state.ideas, {$splice: [[0, 0, response.data]]})
@@ -46,7 +46,7 @@ class IdeasContainer extends Component {
   }
 
   deleteIdea = (id) => {
-    axios.delete(`http://localhost:3001/api/v1/ideas/${id}`)
+    axios.delete(`https://lit-castle-79659.herokuapp.com/api/v1/ideas/${id}`)
     .then(response => {
         console.log(response)
         const ideaIndex = this.state.ideas.findIndex(x => x.id === id)

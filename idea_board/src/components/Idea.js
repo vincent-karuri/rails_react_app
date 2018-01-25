@@ -10,7 +10,7 @@ class Idea extends Component {
 			<div className="tile">
 			    <span className="deleteButton" onClick={this.handleDelete}>x</span>
 	  			<h4 onClick={this.handleClick}>{this.props.idea.title}</h4>
-	  			<p onClick={this.handleDelete}>{this.props.idea.body}</p>
+	  			<p onClick={this.handleClick}>{this.props.idea.body}</p>
 			</div>
 		)
 	}
