@@ -2,9 +2,9 @@
 
 This project involves building a web app with a Rails API backend and a React.js front end.
 
-The web app is an idea board which allows for creating of new ideas, updating/editing existing ideas and deleting existing ideas.
+The web app is an idea board which allows for creation of new ideas, updating/editing of existing ideas and deletion of existing ideas.
 
-All these actions are supported by the Rails backend API that the React app calls for each user action.
+All these actions are supported by the Rails API backend which the React app calls for each user action.
 
 The app is live at: https://afternoon-dawn-44140.herokuapp.com/.
 
